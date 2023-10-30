@@ -5,7 +5,7 @@ import json
 Base.metadata.drop_all(engine)
 Base.metadata.create_all(engine)
 
-users_file = open('../data/users.json')
+users_file = open('./data/users.json')
 users = json.load(users_file)
 users_file.close()
 
